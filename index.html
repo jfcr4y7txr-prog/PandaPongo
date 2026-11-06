@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda-Pogo: Pure Action Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="header">
+      <h1>PANDA-POGO 🐼⚡</h1>
+      <div class="scoreboard">
+        <span>Score: <strong id="current-score">0</strong></span>
+        <span>Combo: <strong id="combo-score">x1</strong></span>
+        <span>High Score: <strong id="high-score">0</strong></span>
+        <span>Bamboo: <strong id="bamboo-score">0 🎋</strong></span>
+      </div>
+    </div>
+    
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="800" height="400"></canvas>
+      <div id="combo-popup" class="combo-popup"></div>
+    </div>
+
+    <div class="controls-info">
+      <p>
+        <kbd>Space</kbd> / <kbd>Up</kbd> High Jump | 
+        <kbd>Down</kbd> Slam Down | 
+        <kbd>F</kbd> / <kbd>Shift</kbd> Rocket Boost 🚀 (5 🎋) | 
+        <kbd>E</kbd> Magnet 🧲 (3 🎋)
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
